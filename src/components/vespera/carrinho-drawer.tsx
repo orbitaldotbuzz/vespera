@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — carrinho (Sheet lateral) com progresso de frete
+// VÉSPERA - carrinho (Sheet lateral) com progresso de frete
 // ============================================================
 
 import Image from "next/image";
@@ -53,7 +53,7 @@ export function CarrinhoDrawer({ aberto, onOpenChange, aoFinalizar }: Props) {
             <p className="text-sm text-muted-foreground">
               Seu carrinho está vazio.
               <br />
-              O drop não espera — bora escolher.
+              O drop não espera. Bora escolher.
             </p>
             <Button
               variant="outline"

@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — carrinho (Zustand + persistência localStorage)
+// VÉSPERA - carrinho (Zustand + persistência localStorage)
 // ============================================================
 
 import { create } from "zustand";

@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — hero editorial + ticker marquee
+// VÉSPERA - hero editorial + ticker marquee
 // ============================================================
 
 import Image from "next/image";
@@ -32,7 +32,7 @@ export function Hero({ deadline }: { deadline: number }) {
 
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
               VÉSPERA é streetwear feito em São Paulo em tiragens curtas.
-              Cada drop tem data de fim — quando esgota, fica para a história.
+              Cada drop tem data de fim: quando esgota, fica para a história.
             </p>
 
             <div className="mt-8 flex flex-col gap-6">
@@ -78,7 +78,7 @@ export function Hero({ deadline }: { deadline: number }) {
 
 const TICKER = [
   "FRETE GRÁTIS ACIMA DE R$ 250",
-  "DROP NOITE 01 — TIRAGEM LIMITADA",
+  "DROP NOITE 01 · TIRAGEM LIMITADA",
   "FEITO EM SÃO PAULO",
   "PAGAMENTO VIA PIX",
   "QUANTO ESGOTA, NÃO VOLTA",

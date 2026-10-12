@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — checkout: dados → PIX (QR + copia-e-cola) → pago
+// VÉSPERA - checkout: dados → PIX (QR + copia-e-cola) → pago
 // ============================================================
 
 import { useState } from "react";
@@ -20,7 +20,7 @@ interface Props {
   onOpenChange: (v: boolean) => void;
   pedido: PedidoResposta | null;
   onPedidoCriado: (p: PedidoResposta) => void;
-  /** chamado ao fechar com pedido concluído — pai reseta o estado */
+  /** chamado ao fechar com pedido concluído - pai reseta o estado */
   onConcluido: () => void;
 }
 
@@ -208,7 +208,7 @@ export function CheckoutModal({ aberto, onOpenChange, pedido, onPedidoCriado, on
               SIMULAR PAGAMENTO
             </Button>
             <p className="text-center font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-              Demo de portfólio — nenhum pagamento real é processado
+              Demo de portfólio · nenhum pagamento real é processado
             </p>
           </div>
         )}
@@ -225,7 +225,7 @@ export function CheckoutModal({ aberto, onOpenChange, pedido, onPedidoCriado, on
                 Pedido <span className="font-mono text-foreground">{pedido.code}</span> confirmado.
                 <br />
                 Enviamos os detalhes para seu e-mail e o código de rastreio
-                assim que sair do ateliê — em até 3 dias úteis.
+                assim que sair do ateliê, em até 3 dias úteis.
               </p>
             </div>
             <Button

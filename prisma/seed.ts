@@ -1,5 +1,5 @@
 /**
- * VÉSPERA — seed do catálogo (drop NOITE 01)
+ * VÉSPERA: seed do catálogo (drop NOITE 01)
  * Uso: bun prisma/seed.ts
  */
 import { PrismaClient } from "@prisma/client";
@@ -35,7 +35,7 @@ const CATALOGO: Seed[] = [
     slug: "camiseta-solsticio",
     name: "Camiseta Solstício",
     description:
-      "Off-white cru, tingimento natural e estampa tonal quase invisível — vista para quem entende sutileza. Malha 220g com gola dupla reforçada que não vira pastel depois da terceira lavada.",
+      "Off-white cru, tingimento natural e estampa tonal quase invisível, vista para quem entende sutileza. Malha 220g com gola dupla reforçada que não vira pastel depois da terceira lavada.",
     price: P(139),
     category: "camisetas",
     image: "/produtos/camiseta-solsticio.png",
@@ -55,7 +55,7 @@ const CATALOGO: Seed[] = [
     slug: "camiseta-eclipse",
     name: "Camiseta Eclipse",
     description:
-      "Vermelho queimado com lavagem vintage, peça a peça — nenhuma sai igual à outra. Estampa frontal inspirada nos cartões celestes dos anos 90. Edição limitada a 60 peças.",
+      "Vermelho queimado com lavagem vintage, peça a peça: nenhuma sai igual à outra. Estampa frontal inspirada nos cartões celestes dos anos 90. Edição limitada a 60 peças.",
     price: P(149),
     category: "camisetas",
     image: "/produtos/camiseta-eclipse.png",
@@ -66,7 +66,7 @@ const CATALOGO: Seed[] = [
     slug: "moletom-equador",
     name: "Moletom Linha do Equador",
     description:
-      "Felpa pesada 480g com interior escovado — o moletom que segura o inverno de São Paulo e o vento da madrugada. Capuz estruturado de três painéis e bolso canguru reforçado.",
+      "Felpa pesada 480g com interior escovado: o moletom que segura o inverno de São Paulo e o vento da madrugada. Capuz estruturado de três painéis e bolso canguru reforçado.",
     price: P(299),
     category: "moletons",
     image: "/produtos/moletom-equador.png",
@@ -77,7 +77,7 @@ const CATALOGO: Seed[] = [
     slug: "moletom-crepusculo",
     name: "Moletom Crepúsculo",
     description:
-      "Terracota queimada — a cor do céu às 18h47. Corte relaxed com punhos canelados grossos e capuz forrado em xadrez tonal. Peça de assinatura para quem não tem medo de cor.",
+      "Terracota queimada, a cor do céu às 18h47. Corte relaxed com punhos canelados grossos e capuz forrado em xadrez tonal. Peça de assinatura para quem não tem medo de cor.",
     price: P(279),
     category: "moletons",
     image: "/produtos/moletom-crepusculo.png",
@@ -87,7 +87,7 @@ const CATALOGO: Seed[] = [
     slug: "moletom-aurora",
     name: "Moletom Aurora Aberta",
     description:
-      "Cinza mescla em sarja fleece com zíper YKK antiquado e gola alta dupla. A terceira peça que você veste na semana inteira sem culpa — e ninguém percebe.",
+      "Cinza mescla em sarja fleece com zíper YKK antiquado e gola alta dupla. A terceira peça que você veste na semana inteira sem culpa, e ninguém percebe.",
     price: P(289),
     category: "moletons",
     image: "/produtos/moletom-aurora.png",
@@ -107,7 +107,7 @@ const CATALOGO: Seed[] = [
     slug: "bone-horizonte",
     name: "Boné Horizonte",
     description:
-      "Corduroy areia com aba reta e fecho de couro vegetal. Textura que muda de cor conforme a luz — como um horizonte às 19h. Baixíssimo estoque da última remessa.",
+      "Corduroy areia com aba reta e fecho de couro vegetal. Textura que muda de cor conforme a luz, como um horizonte às 19h. Baixíssimo estoque da última remessa.",
     price: P(109),
     category: "bones",
     image: "/produtos/bone-horizonte.png",

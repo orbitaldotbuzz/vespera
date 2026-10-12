@@ -6,7 +6,7 @@ import { gerarPixCopiaECola } from "@/lib/pix";
 import { FRETE_GRATIS_ACIMA_DE, FRETE_PADRAO, LIMITE_QTY } from "@/lib/vespera";
 
 // ============================================================
-// POST /api/checkout — cria o pedido e gera o PIX (simulado)
+// POST /api/checkout - cria o pedido e gera o PIX (simulado)
 // ------------------------------------------------------------
 // Valida estoque, decrementa variantes em transação e persiste
 // o pedido com payload PIX no formato EMV (BR Code). Portfólio:

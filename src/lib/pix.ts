@@ -1,9 +1,9 @@
 // ============================================================
-// VÉSPERA — gerador de payload PIX (copia-e-cola)
+// VÉSPERA - gerador de payload PIX (copia-e-cola)
 // ------------------------------------------------------------
 // Monta um payload no formato EMV QR Code MPM (BR Code) do Banco
 // Central, com CRC16-CCITT válido. Chave PIX fictícia de exemplo
-// (ambiente de portfólio — nenhum pagamento real é processado).
+// (ambiente de portfólio - nenhum pagamento real é processado).
 // ============================================================
 
 const ID_PAYLOAD = "00";
@@ -25,7 +25,7 @@ function campo(id: string, valor: string): string {
   return `${id}${valor.length.toString().padStart(2, "0")}${valor}`;
 }
 
-/** CRC16-CCITT (poly 0x1021, init 0xFFFF) — exigido pelo BR Code */
+/** CRC16-CCITT (poly 0x1021, init 0xFFFF) - exigido pelo BR Code */
 function crc16(payload: string): string {
   let crc = 0xffff;
   for (const byte of Buffer.from(payload, "utf8")) {

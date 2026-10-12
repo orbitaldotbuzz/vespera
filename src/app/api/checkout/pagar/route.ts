@@ -3,7 +3,7 @@ import { z } from "zod";
 import { db } from "@/lib/db";
 
 // ============================================================
-// POST /api/checkout/pagar — simulação de confirmação do PIX
+// POST /api/checkout/pagar - simulação de confirmação do PIX
 // ------------------------------------------------------------
 // Portfólio: em produção isto viria do webhook do PSP. Aqui, o
 // botão "simular pagamento" da tela do PIX chama este endpoint

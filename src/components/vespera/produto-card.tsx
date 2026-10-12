@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — card do catálogo (click abre modal de produto)
+// VÉSPERA - card do catálogo (click abre modal de produto)
 // ============================================================
 
 import Image from "next/image";
@@ -21,7 +21,7 @@ export function ProdutoCard({ produto, aoAbrir }: Props) {
     <button
       type="button"
       onClick={() => aoAbrir(produto)}
-      className="group text-left focus-visible:outline-2 focus-visible:outline-ring"
+      className="group flex h-full w-full flex-col text-left focus-visible:outline-2 focus-visible:outline-ring"
       aria-label={`Ver ${produto.name}, ${formatarPreco(produto.price)}`}
     >
       <div className="relative aspect-[3/4] overflow-hidden border border-border bg-card">
@@ -53,17 +53,17 @@ export function ProdutoCard({ produto, aoAbrir }: Props) {
         </div>
       </div>
 
-      <div className="mt-3 flex items-start justify-between gap-2">
-        <div>
-          <h3 className="text-sm font-medium leading-snug text-foreground group-hover:text-primary transition-colors">
+      <div className="mt-3 flex flex-1 flex-col">
+        <div className="flex items-start justify-between gap-2">
+          <h3 className="line-clamp-2 text-sm font-medium leading-snug text-foreground group-hover:text-primary transition-colors">
             {produto.name}
           </h3>
-          <p className="mt-0.5 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-            {produto.drop}
+          <p className="font-mono text-sm tabular-nums text-foreground whitespace-nowrap">
+            {formatarPreco(produto.price)}
           </p>
         </div>
-        <p className="font-mono text-sm tabular-nums text-foreground whitespace-nowrap">
-          {formatarPreco(produto.price)}
+        <p className="mt-auto pt-1 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+          {produto.drop}
         </p>
       </div>
     </button>

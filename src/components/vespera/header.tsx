@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — header sticky + carrinho
+// VÉSPERA - header sticky + carrinho
 // ============================================================
 
 import { useEffect, useState } from "react";
@@ -35,7 +35,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
-        <a href="#" className="flex items-baseline gap-2 group" aria-label="VÉSPERA — início">
+        <a href="#" className="flex items-baseline gap-2 group" aria-label="VÉSPERA · início">
           <span className="font-display text-2xl tracking-wide text-foreground group-hover:text-primary transition-colors">
             VÉSPERA
           </span>

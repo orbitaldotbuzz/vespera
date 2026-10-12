@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — seção drop: destaque + countdown grande
+// VÉSPERA - seção drop: destaque + countdown grande
 // ============================================================
 
 import Image from "next/image";

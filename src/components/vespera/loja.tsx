@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — orquestrador da loja (client)
+// VÉSPERA - orquestrador da loja (client)
 // Recebe o catálogo do servidor e coordena modais/carrinho.
 // ============================================================
 
@@ -86,7 +86,7 @@ export function Loja({ produtos, deadline }: Props) {
 }
 
 // ============================================================
-// Manifesto — identidade editorial da marca
+// Manifesto - identidade editorial da marca
 // ============================================================
 
 function Manifesto() {
@@ -116,7 +116,7 @@ function Manifesto() {
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
               É o minuto em que o sol já se foi, mas a cidade ainda guarda o
-              calor do dia. É quando tudo pode acontecer — e é dessa energia
+              calor do dia. É quando tudo pode acontecer, e é dessa energia
               que nascemos. Cada peça sai do ateliê em São Paulo em tiragem
               curta, numerada e datada, como um ingresso para algo que não
               se repete.
@@ -128,7 +128,7 @@ function Manifesto() {
               uma ideia a repetir um algoritmo.
             </p>
             <p className="font-mono text-sm text-foreground">
-              — Estúdio VÉSPERA, desde 2026
+              Estúdio VÉSPERA, desde 2026
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@ function Manifesto() {
 }
 
 // ============================================================
-// Footer — sticky bottom por flex-col + mt-auto no pai
+// Footer - sticky bottom por flex-col + mt-auto no pai
 // ============================================================
 
 function Footer() {
@@ -170,7 +170,7 @@ function Footer() {
 
         <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-            © 2026 VÉSPERA Studio — projeto de portfólio
+            © 2026 VÉSPERA Studio · projeto de portfólio
           </p>
           <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
             Pagamentos simulados · nenhum produto é cobrado

@@ -3,7 +3,7 @@ import { Loja } from "@/components/vespera/loja";
 import type { ProdutoDTO } from "@/lib/vespera";
 
 // ============================================================
-// VÉSPERA — home: catálogo do drop NOITE 01 direto do banco
+// VÉSPERA - home: catálogo do drop NOITE 01 direto do banco
 // ============================================================
 
 export const dynamic = "force-dynamic";

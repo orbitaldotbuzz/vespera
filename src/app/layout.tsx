@@ -20,16 +20,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VÉSPERA — streetwear autoral · drop NOITE 01",
+  title: "VÉSPERA · streetwear autoral · drop NOITE 01",
   description:
-    "Roupas de autor feitas em São Paulo. Camisetas, moletons e bonés em drops limitados — quando esgota, fica para a história.",
+    "Roupas de autor feitas em São Paulo. Camisetas, moletons e bonés em drops limitados: quando esgota, fica para a história.",
   keywords: ["streetwear", "moda autoral", "drop", "camisetas", "bonés", "moletons", "Brasil"],
   authors: [{ name: "VÉSPERA" }],
   icons: {
     icon: "/favicon-vespera.svg",
   },
   openGraph: {
-    title: "VÉSPERA — streetwear autoral",
+    title: "VÉSPERA · streetwear autoral",
     description: "Drops limitados de roupas de autor feitas em São Paulo.",
     siteName: "VÉSPERA",
     type: "website",

@@ -1,5 +1,5 @@
 // ============================================================
-// VÉSPERA — tipos compartilhados entre servidor e cliente
+// VÉSPERA - tipos compartilhados entre servidor e cliente
 // ============================================================
 
 export interface VarianteDTO {

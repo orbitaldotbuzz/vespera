@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — countdown do drop (hidratação segura)
+// VÉSPERA - countdown do drop (hidratação segura)
 // ============================================================
 
 import { useEffect, useState } from "react";
@@ -22,9 +22,13 @@ export function Countdown({ deadline, compacto = false }: { deadline: number; co
   const [agora, setAgora] = useState<number | null>(null);
 
   useEffect(() => {
-    setAgora(Date.now());
+    // primeiro tick fora do ciclo síncrono do effect (evita cascata de renders)
+    const raf = requestAnimationFrame(() => setAgora(Date.now()));
     const t = setInterval(() => setAgora(Date.now()), 1000);
-    return () => clearInterval(t);
+    return () => {
+      cancelAnimationFrame(raf);
+      clearInterval(t);
+    };
   }, []);
 
   if (agora === null) {

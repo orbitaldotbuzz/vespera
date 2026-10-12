@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — seção coleção: filtros por categoria + grid
+// VÉSPERA - seção coleção: filtros por categoria + grid
 // ============================================================
 
 import { useState } from "react";
@@ -63,7 +63,7 @@ export function Colecao({ produtos, aoAbrir }: Props) {
 
       {visiveis.length === 0 ? (
         <p className="mt-14 border border-dashed border-border p-10 text-center font-mono text-sm text-muted-foreground">
-          Nada por aqui nesta categoria — aguarde o próximo drop.
+          Nada por aqui nesta categoria. Aguarde o próximo drop.
         </p>
       ) : (
         <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6">

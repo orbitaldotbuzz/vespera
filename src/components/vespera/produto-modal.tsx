@@ -1,7 +1,7 @@
 "use client";
 
 // ============================================================
-// VÉSPERA — modal do produto: variações, qty e add ao carrinho
+// VÉSPERA - modal do produto: variações, qty e add ao carrinho
 // ============================================================
 
 import { useMemo, useState } from "react";
@@ -63,7 +63,7 @@ export function ProdutoModal({ produto, aberto, onOpenChange }: Props) {
     onOpenChange(false);
     toast({
       title: "No carrinho",
-      description: `${produto.name} · ${tamanho} — ${formatarPreco(produto.price * Math.min(qty, estoque))}`,
+      description: `${produto.name} · ${tamanho} · ${formatarPreco(produto.price * Math.min(qty, estoque))}`,
       action: (
         <Button size="sm" variant="outline" onClick={abrirCarrinho} className="border-border">
           Ver
@@ -192,7 +192,7 @@ export function ProdutoModal({ produto, aberto, onOpenChange }: Props) {
               </li>
               <li className="flex items-center gap-2.5">
                 <Package className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
-                Tiragem limitada — sem reposição
+                Tiragem limitada, sem reposição
               </li>
               <li className="flex items-center gap-2.5">
                 <Check className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
