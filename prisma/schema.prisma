@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// VÉSPERA — streetwear autoral (drop culture)
+// Preços sempre em centavos (Int) para evitar float.
+// ============================================================
+
+model Product {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  name        String
+  description String
+  // preços em centavos (ex.: 12990 = R$ 129,90)
+  price       Int
+  category    String // "camisetas" | "moletons" | "bones"
+  image       String // path em /public (ex.: /produtos/camiseta-vespera.png)
+  featured    Boolean          @default(false)
+  drop        String           @default("NOITE 01")
+  variants    ProductVariant[]
+  createdAt   DateTime         @default(now())
+}
+
+model ProductVariant {
+  id        String  @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  size      String // P / M / G / GG / ÚNICO
+  stock     Int     @default(0)
+
+  @@unique([productId, size])
+}
+
+model Order {
+  id           String      @id @default(cuid())
+  code         String      @unique // VSP-A1B2C3
+  customerName String
+  customerEmail String
+  total        Int // centavos, com frete
+  shipping     Int         @default(0) // centavos
+  status       String      @default("AGUARDANDO_PIX") // AGUARDANDO_PIX | PAGO
+  pixCode      String // payload copia-e-cola (formato EMV)
+  items        OrderItem[]
+  createdAt    DateTime    @default(now())
+}
+
+model OrderItem {
+  id          String  @id @default(cuid())
+  orderId     String
+  order       Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productSlug String
+  productName String
+  size        String
+  qty         Int
+  price       Int // centavos unitário na hora da compra
+}

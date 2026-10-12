@@ -1,0 +1,36 @@
+# deps
+node_modules/
+
+# next
+.next/
+out/
+build/
+
+# env e banco local
+.env*
+db/
+
+# logs e artefatos locais
+dev.log
+server.log
+*.log
+qa_*.png
+logs_*.log
+
+# sistema
+.DS_Store
+*.pem
+
+# pastas de outros projetos (nao sao deste app)
+workspace/
+audit/
+download/
+upload/
+scripts/
+skills/
+.zscripts/
+agent-ctx/
+examples/
+mini-services/
+Caddyfile
+public/logo.svg
