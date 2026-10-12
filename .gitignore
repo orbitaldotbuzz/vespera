@@ -36,3 +36,5 @@ Caddyfile
 public/logo.svg
 worklog.md
 qa_*.html
+tool-results/
+findings*.json
