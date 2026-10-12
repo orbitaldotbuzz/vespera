@@ -34,3 +34,5 @@ examples/
 mini-services/
 Caddyfile
 public/logo.svg
+worklog.md
+qa_*.html
